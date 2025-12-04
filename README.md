@@ -1,17 +1,25 @@
-## ⚠️ 重要说明
+<div align="center">
 
-本项目本体暂不开源，当前仓库主要用于发布版本和接受反馈。  
-应用使用的第三方开源组件我们均已按要求公开 License。
+**Languages:** [English](README.md) | [简体中文](README.zh-CN.md)
 
-未来会根据项目进展评估是否开放更多内容。  
-感谢理解与支持！
+</div>
+
+---
+
+## ⚠️ Important Notice
+
+The main project is currently not open source. This repository is primarily for publishing releases and collecting feedback.  
+All third-party open-source components used in this application have their licenses publicly disclosed as required.
+
+We will evaluate whether to open more content in the future based on project progress.  
+Thank you for your understanding and support! For more details, please refer to the [Pinned Announcement](https://github.com/666OS/ClashMac/issues/15)
 
 <br>
 <p align="center">
   <img src="assets/clashmac-logo.png" alt="ClashMac Screenshot" width="300" style="filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));">
 </p>
 <h1 align="center">ClashMac</h1>
-<h3 align="center" style="margin-top: 0; margin-bottom: 20px;">轻量级 macOS Clash 菜单栏客户端</h3>
+<h3 align="center" style="margin-top: 0; margin-bottom: 20px;">Lightweight macOS Clash Menu Bar Client</h3>
 
 <p align="center" style="margin-top: 0; margin-bottom: 50px;">
   <a href="https://github.com/666OS/ClashMac/releases/latest">
@@ -26,61 +34,61 @@
   <img src="assets/screenshot.png" alt="ClashMac Screenshot" width="400">
 </p>
 
-## 特性
+## Features
 
-- **原生应用** - SwiftUI 开发，完美融入系统
-- **轻量高效** - 菜单栏应用，资源占用低
-- **网络接管** - 一键开启/关闭，系统代理&增强模式
-- **特权助手** - 实现免密管理系统代理与内核
-- **实时流量监控** - SSE 推送，毫秒级更新
-- **可视化面板** - 流量统计、连接数、内存使用
-- **Web Dashboard** - 集成控制面板访问
-- **应用内更新** - 自动检测新版本并支持一键下载与安装
+- **Native Application** - Built with SwiftUI, seamlessly integrated with the system
+- **Lightweight & Efficient** - Menu bar app with minimal resource usage
+- **Network Takeover** - One-click enable/disable system proxy & enhanced mode
+- **Privileged Helper** - Password-free management of system proxy and kernel
+- **Real-time Traffic Monitoring** - SSE push with millisecond-level updates
+- **Visualization Panel** - Traffic statistics, connections count, memory usage
+- **Web Dashboard** - Integrated control panel access
+- **In-App Updates** - Auto-detect new versions with one-click download and installation
 
-## 下载
+## Download
 
-在 [Releases 页面](https://github.com/666OS/ClashMac/releases/latest) 下载最新版本：
+Download the latest version from the [Releases page](https://github.com/666OS/ClashMac/releases/latest):
 
 - **Apple Silicon (M1/M2/M3/M4)**: `ClashMac-v*-macos-arm64.zip`
 - **Intel Mac**: `ClashMac-v*-macos-x86_64.zip`
 
-**兼容方案**：请参阅 [测试配置](https://github.com/666OS/YYDS/tree/main/mihomo/config)
+**Compatible Configuration**: Please refer to [Test Configurations](https://github.com/666OS/YYDS/tree/main/mihomo/config)
 
-**安装步骤**：
-1. 解压下载的 zip 文件
-2. 将 `ClashMac.app` 拖到"应用程序"文件夹
-3. 首次打开时，右键点击并选择"打开"（绕过安全检查）
+**Installation Steps**:
+1. Unzip the downloaded zip file
+2. Drag `ClashMac.app` to the "Applications" folder
+3. On first launch, right-click and select "Open" (to bypass security check)
 
-**提示**: 不确定您的 Mac 类型？点击左上角  → 关于本机，查看"芯片"信息。
+**Tip**: Not sure which Mac you have? Click the  menu at the top left → About This Mac, and check the "Chip" information.
 
-> **注意：Mac Gatekeeper 可能会拦截未签名应用**  
-> 因为 ClashMac 没有经过 Apple notarize（公证），macOS 默认不允许直接打开。
+> **Note: Mac Gatekeeper may block unsigned applications**  
+> Since ClashMac is not Apple notarized, macOS will not allow it to open directly by default.
 
-### 解决方法
+### Solutions
 
-#### 方法 1：系统设置中允许打开
-1. 尝试打开 ClashMac，出现安全警告时点击“完成”
-2. 打开 **系统设置** → **隐私与安全性**
-3. 向下滚动，找到提示：“ClashMac 已被阻止打开”
-4. 点击旁边的“仍要打开”
-5. 在弹出框再点击“仍要打开”即可
+#### Method 1: Allow in System Settings
+1. Try to open ClashMac, click "Done" when the security warning appears
+2. Open **System Settings** → **Privacy & Security**
+3. Scroll down and find the message: "ClashMac was blocked from opening"
+4. Click "Open Anyway" next to it
+5. Click "Open Anyway" again in the popup dialog
 
-#### 方法 2：终端解除限制
-在“终端”中输入：
+#### Method 2: Remove Restrictions via Terminal
+Enter in Terminal:
 
 ```bash
 xattr -cr /Applications/ClashMac.app
 ```
-回车后重新打开应用
+Press Enter and reopen the application
 
 
-#### 方法 3：移除隔离属性
+#### Method 3: Remove Quarantine Attribute
 
-在“终端”中输入：
+Enter in Terminal:
 ```bash
 xattr -d com.apple.quarantine /Applications/ClashMac.app
 ```
-回车后重新打开应用
+Press Enter and reopen the application
 
 ## License
 
@@ -88,11 +96,11 @@ ClashMac is a proprietary, closed-source application.
 Only binary releases are provided in this repository.
 
 This project uses third-party open-source components.  
-The full list of licenses is available in:
+The full list of licenses is available at:
 
 [THIRD_PARTY_LICENSES](https://github.com/666OS/ClashMac/blob/main/THIRD_PARTY_LICENSES.txt) 
 
-## 致谢
+## Acknowledgments
 
 - [mihomo](https://github.com/MetaCubeX/mihomo)
 - [Vernesong](https://github.com/vernesong/mihomo)
