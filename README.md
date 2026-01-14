@@ -34,6 +34,9 @@
     <td colspan="2" align="center"><img src="./assets/dashboard.jpg" alt="Dashboard"></td>
   </tr>
   <tr>
+    <td colspan="2" align="center"><img src="./assets/Route.jpg" alt="Route"></td>
+  </tr> 
+  <tr>
     <td colspan="2" align="center"><img src="./assets/Topology.jpg" alt="Topology"></td>
   </tr>
   <tr>
@@ -44,30 +47,56 @@
 
 ## Core Experience
 
+- **Route Map**: Take off from your city, arc across the globe, land at proxy nodes
+  - Multi-hop Transit: dialer-proxy chain visualization, transit flights reach further
+  - Live Flights: Every active connection is an airplane, flight status refreshes every 10s
+  - Flight Log: Live / Today / This Month / Last Month, review every flight path
+  - Global View: Scroll to zoom, drag to pan, double-click to return home
+  - Smart Viewport: Auto-adjust view when switching time dimensions, all routes in sight
+  - Continental Routes: Color-coded by destination continent, Asia/Europe/America routes at a glance
+  - Night Lights: Routes glow like city lights in dark mode
+  - Privacy Mode: 190+ cities as random departure points, only you know your location
+  - Boarding Ritual: The world is vast, we need a small ceremony
+
+- **Connection Topology**: Native traffic topology visualization, see where your data comes from and goes
+  - Complete Chain: Source IP → Process → Rule → Proxy → Egress, fully transparent
+  - Multi-layer Nesting: Supports nested subgroups, complex proxy structures clearly presented
+  - Smart Highlight: Hover to illuminate upstream/downstream paths instantly
+  - Hover Menu: Path hover shows statistics, popular domains aggregated
+
+- **Traffic Statistics**: Native traffic statistics engine, track every byte precisely
+  - 4D Tracking: Statistics by Proxy/Process/Interface/Host
+  - Traffic Trends: 7-day bar chart with daily average, usage patterns at a glance
+  - Subscription Usage: Traffic progress, expiry date at a glance
+  - Rule Statistics: Visualize rule match counts, one-click reset
+
+### Native Architecture
 - **Native Built**: SwiftUI + macOS native APIs, deeply integrated with the system
 - **Dual Proxy Modes**: System Proxy + TUN Enhanced, complete traffic coverage
+- **Lightweight**: Menu bar resident, minimal memory footprint
+
+### Visual Dashboard
 - **Standalone Dashboard**: Native Dashboard app with Proxies/Rules/Connections/Logs at a glance
-- **Connection Topology**: Native traffic topology visualization, see where your data comes from and goes
-- **Traffic Tracking**: 4-dimension statistics by Proxy/Process/Interface/Host, byte-level precision
-- **Traffic Trends**: 7-day bar chart with daily average, usage patterns at a glance
-- **Rule Statistics**: Visualize rule match counts, one-click reset
 - **Privacy Mode**: One-click hide sensitive info like IP/nodes, share screenshots worry-free
-- **One-Click Rules**: Add proxy rules for current webpage, supports major browsers
-- **Zero Config**: Auto-complete DNS/TUN/GEO parameters, ready out of the box
+
+### Proxy & Control
 - **Real-Time Stats**: Menu bar shows speed, connections, memory usage
-- **Subscription Info**: Usage, expiry date, progress bar at a glance
 - **Quick Switch**: Switch nodes from menu bar/dashboard, one-click latency test
 - **Auto-Disconnect**: Auto-disconnect existing connections on node switch, traffic flows through new node immediately
+- **Global Hotkeys**: System-level shortcuts for proxy control, one-key dashboard access
+- **One-Click Rules**: Add proxy rules for current webpage, supports major browsers
+
+### Configuration
+- **Zero Config**: Auto-complete DNS/TUN/GEO parameters, ready out of the box
 - **Subscription Management**: Remote config import, auto-update, smart naming
 - **Drag & Drop**: Drop YAML config, auto-switch and apply
 - **Config Pre-Check**: Auto-validate before import, pinpoint errors precisely
-- **Video Boost**: Disable overseas QUIC, say goodbye to YouTube buffering
 - **Parameter Override**: Unified config across subscriptions, no file modification
+- **Video Boost**: Disable overseas QUIC, say goodbye to YouTube buffering
+
+### System & Experience
 - **Crash Diagnosis**: Auto-identify issues, provide solutions
-- **Global Hotkeys**: System-level shortcuts for proxy control, one-key dashboard access
-- **Lightweight**: Menu bar resident, minimal memory footprint
 - **Customizable UI**: Show/hide menu items, create your own layout
-- **Auto Update**: Detect new versions, one-click upgrade
 - **Bilingual**: Auto-switch between English and Chinese
 - **Password-Free**: Privileged helper handles auth, no password prompts
 
